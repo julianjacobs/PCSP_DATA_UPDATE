@@ -15,21 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Cards Export Julian 7-30-21.xlsx">
+    <None Include="input.csv">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="..\Update Template Cards.xls">
+    <None Include="Update Template Cards.csv">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="..\Cards Export Julian 7-30-21.csv">
+    <None Include="Update Template Cards.xls">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="..\Update Template Cards.csv">
+    <None Include="Cards Export Julian 7-30-21.xlsx">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

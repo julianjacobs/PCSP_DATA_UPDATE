@@ -139,13 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="functions.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="parser.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Cards Export Julian 7-30-21.csv" />
-    <None Include="..\Cards Export Julian 7-30-21.xlsx" />
-    <None Include="..\Update Template Cards.csv" />
-    <None Include="..\Update Template Cards.xls" />
+    <None Include="Cards Export Julian 7-30-21.xlsx" />
+    <None Include="input.csv" />
+    <None Include="Update Template Cards.csv" />
+    <None Include="Update Template Cards.xls" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
