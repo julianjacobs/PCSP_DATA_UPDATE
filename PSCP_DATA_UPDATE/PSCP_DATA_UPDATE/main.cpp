@@ -2,12 +2,10 @@
 #include <sstream>
 #include <iostream>
 #include <string>
+
+#include "functions.h"
+
 using namespace std;
-
-
-
-
-
 
 
 int main(int argc, char* argv[]) {
@@ -20,10 +18,13 @@ int main(int argc, char* argv[]) {
 	//get file name
 	string fileName = argv[1];
 	
-	//initialize in and out streams
-	ofstream outFile("PI.txt");
+	//initialize in stream
 	ifstream file;
 	file.open(fileName);
+	
+	//initialize out stream
+	ofstream outFile("output_real.csv");
+	outFile << "Product Sku" << "," << "Product Name" << "\n";
 	
 	//check if file got opened properly.
 	if (!file.is_open()) {
@@ -43,9 +44,12 @@ int main(int argc, char* argv[]) {
 		getline(ss, sku, ',');
 		//second value is name of sku which we want to edit
 		getline(ss, productName, ',');
+		
+		productName = updateProfile(productName);
+		outFile << sku << "," << productName << "\n";
 
 	}
-	
-
-
+	//close files
+	outFile.close();
+	file.close();
 }
